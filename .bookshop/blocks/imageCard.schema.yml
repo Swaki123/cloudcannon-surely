@@ -1,0 +1,12 @@
+label: Image Card
+name: imageCard
+props:
+  imageUrl:
+    type: image
+    label: Image URL
+  title:
+    type: text
+    label: Title
+  description:
+    type: text
+    label: Description 

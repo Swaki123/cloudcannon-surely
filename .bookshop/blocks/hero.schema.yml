@@ -1,0 +1,12 @@
+label: Hero
+name: hero
+props:
+  title:
+    type: text
+    label: Title
+  subtitle:
+    type: text
+    label: Subtitle
+  content:
+    type: text
+    label: Content 

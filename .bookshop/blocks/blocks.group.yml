@@ -1,0 +1,6 @@
+label: Blocks
+name: blocks
+repeatable: true
+types:
+  - hero
+  - imageCard 
