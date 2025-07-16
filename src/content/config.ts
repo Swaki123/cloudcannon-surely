@@ -5,6 +5,7 @@ const pages = defineCollection({
     title: z.string(),
     subtitle: z.string(),
     heroComponent: z.any(),
+    imageCardComponent: z.any(),
   }),
 });
 
