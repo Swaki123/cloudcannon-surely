@@ -1,0 +1,17 @@
+---
+type Props = {
+  imageUrl: string;
+  title: string;
+  description: string;
+}
+
+const { imageUrl, title, description } = Astro.props;
+---
+
+<figure style="max-width: 400px; margin: 2rem auto; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-radius: 1rem; overflow: hidden; background: #fff;">
+  <img src={imageUrl} alt={title} style="width: 100%; display: block; object-fit: cover; height: 220px;" />
+  <figcaption style="padding: 1.5rem; text-align: center;">
+    <h3 style="margin-bottom: 0.5rem;">{title}</h3>
+    <p style="color: #555;">{description}</p>
+  </figcaption>
+</figure> 
