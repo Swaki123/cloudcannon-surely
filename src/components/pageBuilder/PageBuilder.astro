@@ -1,24 +1,17 @@
 ---
 const { blocks = [] } = Astro.props;
 
-// Auto-import all .astro components in the components directory (and subdirectories)
-const allComponents = import.meta.glob('../**/*.astro', { eager: true });
+import Hero from '../hero/hero.astro';
+import ImageCard from '../imageCard/imageCard.astro';
 
-// Build a map: { hero: HeroComponent, imageCard: ImageCardComponent, ... }
-const componentMap = Object.fromEntries(
-  Object.entries(allComponents)
-    .map(([path, mod]) => {
-      // Match the filename (e.g., hero.astro, imageCard.astro)
-      const match = path.match(/([^\\/]+)\\.astro$/);
-      const name = match ? match[1] : null;
-      return name ? [name, (mod as { default: any }).default] as [string, any] : undefined;
-    })
-    .filter(Boolean) as [string, any][]
-);
+const componentMap = {
+  hero: Hero,
+  imageCard: ImageCard,
+};
 ---
 
 {blocks.map((block: any, i: number) => {
-  const Component = componentMap[block.type];
+  const Component = componentMap[block.type as keyof typeof componentMap];
   if (!Component) return null;
   return <Component key={i} bookshop:live {...block.props} />;
 })} 
