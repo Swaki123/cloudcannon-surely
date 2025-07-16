@@ -13,5 +13,5 @@ const componentMap = {
 {blocks.map((block: any, i: number) => {
   const Component = componentMap[block.type as keyof typeof componentMap];
   if (!Component) return null;
-  return <Component key={i} bookshop:live {...block.props} />;
+  return <Component key={`${block.type}-${i}`} bookshop:live {...block.props} />;
 })} 
