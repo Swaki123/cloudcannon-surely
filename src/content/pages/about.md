@@ -9,7 +9,7 @@ blocks:
       content: This is a test of the CloudCannon Surely platform.
   - type: imageCard
     props:
-      imageUrl: /public/Screenshot from 2025-04-09 09-00-39.png
+      imageUrl: /uploads/screenshot-from-2025-04-09-09-00-39.png
       title: Image Component
       description: Very cool component
 ---
