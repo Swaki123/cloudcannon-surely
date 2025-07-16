@@ -1,4 +1,6 @@
 ---
+title: About
+subtitle: About this site
 blocks:
   - type: hero
     props:
