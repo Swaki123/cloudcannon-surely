@@ -1,21 +1,25 @@
 ---
-// No props needed for this simple layout
+const { title = 'CloudCannon Testing', subtitle = '' } = Astro.props;
 ---
 
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>CloudCannon Testing</title>
+    <title>{title}</title>
   </head>
   <body>
     <header style="padding: 1rem; background: #f5f5f5; text-align: center;">
-      <h1>CloudCannon Testing</h1>
+      <nav style="margin-bottom: 1rem;">
+        <a href="/" style="margin: 0 1rem; padding: 0.5rem 1rem; background: #6366f1; color: #fff; border-radius: 0.5rem; text-decoration: none;">Home</a>
+        <a href="/about" style="margin: 0 1rem; padding: 0.5rem 1rem; background: #6366f1; color: #fff; border-radius: 0.5rem; text-decoration: none;">About</a>
+      </nav>
+      <h1>{subtitle}</h1>
     </header>
     <main style="min-height: 60vh; padding: 2rem;">
       <slot />
     </main>
     <footer style="padding: 1rem; background: #f5f5f5; text-align: center;">
-      <small>&copy; 2024 CloudCannon Testing</small>
+      <small>&copy; 2024 {title}</small>
     </footer>
   </body>
 </html>
