@@ -1,0 +1,17 @@
+---
+const { blocks = [] } = Astro.props;
+
+import Hero from '../hero/hero.astro';
+import ImageCard from '../imageCard/imageCard.astro';
+
+const componentMap = {
+  hero: Hero,
+  imageCard: ImageCard,
+};
+---
+
+{blocks.map((block: any, i: number) => {
+  const Component = componentMap[block.type as keyof typeof componentMap];
+  if (!Component) return null;
+  return <Component key={i} bookshop:live {...block.props} />;
+})} 

@@ -4,8 +4,7 @@ const pages = defineCollection({
   schema: z.object({
     title: z.string(),
     subtitle: z.string(),
-    heroComponent: z.any(),
-    imageCardComponent: z.any(),
+    blocks: z.any(), // Add this line
   }),
 });
 

@@ -1,12 +1,10 @@
 ---
-import Hero from '../components/hero/hero.astro';
-import ImageCard from '../components/imageCard/imageCard.astro';
+import PageBuilder from '../components/pageBuilder/PageBuilder.astro';
 import Layout from './layout.astro';
 
-const {title, subtitle, heroComponent, imageCardComponent} = Astro.props.frontmatter;
---- 
+const { title, subtitle, blocks } = Astro.props.frontmatter;
+---
 
 <Layout title={title} subtitle={subtitle}>
-    <Hero bookshop:live {...heroComponent} />
-    <ImageCard bookshop:live {...imageCardComponent} />
+  <PageBuilder blocks={blocks} />
 </Layout>
