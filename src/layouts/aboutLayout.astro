@@ -6,5 +6,5 @@ const {title, subtitle, heroComponent} = Astro.props.frontmatter;
 --- 
 
 <Layout title={title} subtitle={subtitle}>
-    <Hero {...heroComponent} />
+    <Hero bookshop:live {...heroComponent} />
 </Layout>

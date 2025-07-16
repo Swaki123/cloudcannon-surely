@@ -11,5 +11,10 @@
   "dependencies": {
     "@bookshop/astro-bookshop": "3.16.3",
     "astro": "^5.11.1"
+  },
+  "devDependencies": {
+    "@bookshop/astro-engine": "3.16.3",
+    "@bookshop/browser": "3.16.3",
+    "@bookshop/generate": "3.16.3"
   }
 }
