@@ -5,7 +5,7 @@ paths:
   static: public
 collections_config:
   pages:
-    path: ./pages
+    path: pages
     glob:
     name:
     singular_name:
