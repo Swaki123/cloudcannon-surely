@@ -5,12 +5,12 @@ paths:
   static: public
 collections_config:
   pages:
-    path: '"/[slug]/"'
+    path: content/pages
     glob:
     name:
     singular_name:
     icon: notes
-    url:
+    url: '"/[slug]/"'
     disable_url: false
     include_developer_files:
     documentation:
