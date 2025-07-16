@@ -19,6 +19,7 @@ collections_config:
     sort_options:
     _editables:
     _enabled_editors:
+      - visual
     _inputs:
     _select_data:
     _structures:
