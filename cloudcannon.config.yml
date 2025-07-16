@@ -10,7 +10,7 @@ collections_config:
     name:
     singular_name:
     icon: notes
-    url: '"/[slug]/"'
+    url: "/[slug]/"
     disable_url: false
     include_developer_files:
     documentation:
