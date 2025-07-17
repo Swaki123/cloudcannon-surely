@@ -4,7 +4,7 @@ spec:
   description: A card with an image, title, and description.
   icon: image
 blueprint:
-  _bookshop_name: imageCard
+  
   imageUrl: /images/example.png
   title: Example Image Card
   description: Example description 
