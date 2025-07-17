@@ -2,6 +2,17 @@
 title: About
 subtitle: About this site
 content_blocks:
+  - _bookshop_name: twoColumn
+    left_blocks:
+      - _bookshop_name: hero
+        title: Example Title
+        subtitle: Example Subtitle
+        content: Example Content
+    right_blocks:
+      - _bookshop_name: imageCard
+        imageUrl: /screenshot-from-2025-03-20-10-45-12.png
+        title: Example Image Card
+        description: Example description
   - _bookshop_name: imageCard
     imageUrl: ../images/screenshot-from-2025-04-09-09-00-39.png
     title: Image Component
