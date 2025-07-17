@@ -1,0 +1,7 @@
+spec:
+  structures: [content_blocks]
+  label: Two Column
+  description: A layout block with two columns, each containing blocks.
+  icon: view_column
+blueprint:
+  blocks: [] 
