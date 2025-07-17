@@ -6,14 +6,14 @@ content_blocks:
     blocks:
       - _bookshop_name: hero
         side: left
-        title: Example Title
-        subtitle: Example Subtitle
-        content: Example Content
+        title: Example One
+        subtitle: Example Subtitle One
+        content: Example Content One
       - _bookshop_name: hero
         side: left
-        title: Example Title
-        subtitle: Example Subtitle
-        content: Example Content
+        title: Example Two
+        subtitle: Example Subtitle Two
+        content: Example Content Two
       - _bookshop_name: imageCard
         side: right
         imageUrl: /screenshot-from-2025-03-20-10-45-12.png
