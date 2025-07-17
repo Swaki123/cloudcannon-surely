@@ -1,12 +1,6 @@
 label: Image Card
 name: imageCard
 props:
-  side:
-    type: select
-    label: Side
-    options:
-      - left
-      - right
   imageUrl:
     type: image
     label: Image URL

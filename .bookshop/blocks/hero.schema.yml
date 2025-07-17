@@ -1,12 +1,6 @@
 label: Hero
 name: hero
 props:
-  side:
-    type: select
-    label: Side
-    options:
-      - left
-      - right
   title:
     type: text
     label: Title
