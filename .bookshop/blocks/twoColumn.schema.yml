@@ -1,6 +1,9 @@
 label: Two Column
 name: twoColumn
 props:
-  blocks:
+  left_blocks:
     type: blocks
-    label: Blocks 
+    label: Left Column Blocks
+  right_blocks:
+    type: blocks
+    label: Right Column Blocks 
