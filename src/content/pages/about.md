@@ -3,13 +3,14 @@ title: About
 subtitle: About this site
 content_blocks:
   - _bookshop_name: twoColumn
-    left_blocks:
+    blocks:
       - _bookshop_name: hero
+        side: left
         title: Example Title
         subtitle: Example Subtitle
         content: Example Content
-    right_blocks:
       - _bookshop_name: imageCard
+        side: right
         imageUrl: /screenshot-from-2025-03-20-10-45-12.png
         title: Example Image Card
         description: Example description

@@ -1,5 +1,7 @@
 ---
-const { left_blocks = [], right_blocks = [] } = Astro.props;
+const { blocks = [] } = Astro.props;
+const left_blocks = blocks.filter((b: any) => b.side === "left");
+const right_blocks = blocks.filter((b: any) => b.side === "right");
 
 const components: Record<string, any> = {};
 const componentImports = import.meta.glob("../**/*.astro", { eager: true });
