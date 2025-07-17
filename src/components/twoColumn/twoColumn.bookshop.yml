@@ -4,4 +4,4 @@ spec:
   description: A layout block with two columns, each containing blocks.
   icon: view_column
 blueprint:
-  blocks: [content_blocks] 
+  blocks: [bookshop:structure:content_blocks] 
