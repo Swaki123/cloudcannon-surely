@@ -1,0 +1,6 @@
+spec:
+  structures: [content_blocks]
+blueprint:
+  title: Example Title
+  subtitle: Example Subtitle
+  content: Example Content 

@@ -1,0 +1,6 @@
+spec:
+  structures: [content_blocks]
+blueprint:
+  imageUrl: /images/example.png
+  title: Example Image Card
+  description: Example description 

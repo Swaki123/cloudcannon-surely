@@ -1,0 +1,3 @@
+blueprint:
+  left_blocks: [bookshop:structure:content_blocks]
+  right_blocks: [bookshop:structure:content_blocks] 
