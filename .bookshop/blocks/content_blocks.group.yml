@@ -1,0 +1,7 @@
+label: Content Blocks
+name: content_blocks
+repeatable: true
+types:
+  - hero
+  - imageCard
+  - twoColumn 
