@@ -4,5 +4,6 @@ spec:
   description: A layout block with two columns, each containing blocks.
   icon: view_column
 blueprint:
+  _bookshop_name: twoColumn
   left_blocks: [bookshop:structure:content_blocks]
   right_blocks: [bookshop:structure:content_blocks] 

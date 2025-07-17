@@ -4,6 +4,7 @@ spec:
   description: A large hero section with title, subtitle, and content.
   icon: view_carousel
 blueprint:
+  _bookshop_name: hero
   title: Example Title
   subtitle: Example Subtitle
   content: Example Content 
