@@ -2,7 +2,7 @@ _schema: _schema
 source: /src/
 paths:
   uploads: ../public/images
-  static: public
+  static: ../public/images
 collections_config:
   pages:
     path: content/pages
