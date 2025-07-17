@@ -16,6 +16,11 @@ content_blocks:
         title: Example Title
         subtitle: Example Subtitle
         content: Example Content
+      - _bookshop_name: hero
+        side: left
+        title: Hello
+        subtitle: ''
+        content: ''
   - _bookshop_name: imageCard
     imageUrl: ../images/screenshot-from-2025-04-09-09-00-39.png
     title: Image Component
