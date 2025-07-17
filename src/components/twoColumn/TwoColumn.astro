@@ -1,0 +1,29 @@
+---
+const { left_blocks = [], right_blocks = [] } = Astro.props;
+
+const components: Record<string, any> = {};
+const componentImports = import.meta.glob("../**/*.astro", { eager: true });
+Object.entries(componentImports).forEach(([path, obj]) => {
+  const parts = path.replace("../", "").split(".")[0].split("/");
+  if (parts[parts.length - 1] === parts[parts.length - 2]) parts.pop();
+  const bookshopName = parts.join("");
+  components[bookshopName] = (obj as { default: any }).default;
+});
+---
+
+<div style="display: flex; gap: 2rem;">
+  <div style="flex: 1;">
+    {left_blocks.map((block: any, i: number) => {
+      const Component = components[block._bookshop_name];
+      if (!Component) return null;
+      return <Component key={`left-${block._bookshop_name}-${i}`} {...block} />;
+    })}
+  </div>
+  <div style="flex: 1;">
+    {right_blocks.map((block: any, i: number) => {
+      const Component = components[block._bookshop_name];
+      if (!Component) return null;
+      return <Component key={`right-${block._bookshop_name}-${i}`} {...block} />;
+    })}
+  </div>
+</div> 

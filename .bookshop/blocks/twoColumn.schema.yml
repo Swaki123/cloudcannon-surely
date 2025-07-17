@@ -1,0 +1,15 @@
+label: Two Column
+name: twoColumn
+props:
+  left_blocks:
+    type: blocks
+    label: Left Column Blocks
+    types:
+      - hero
+      - imageCard
+  right_blocks:
+    type: blocks
+    label: Right Column Blocks
+    types:
+      - hero
+      - imageCard 

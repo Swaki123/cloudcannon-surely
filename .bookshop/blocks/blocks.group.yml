@@ -3,4 +3,5 @@ name: blocks
 repeatable: true
 types:
   - hero
-  - imageCard 
+  - imageCard
+  - twoColumn 
