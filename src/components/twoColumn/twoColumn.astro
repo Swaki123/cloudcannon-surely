@@ -11,15 +11,15 @@ Object.entries(componentImports).forEach(([path, obj]) => {
 });
 ---
 
-<div style="display: flex; gap: 2rem;">
-  <div style="flex: 1;">
+<div style="display: flex; gap: 2rem; max-width: 100%;">
+  <div style="flex: 1; min-width: 0;">
     {left_blocks.map((block: any, i: number) => {
       const Component = components[block._bookshop_name];
       if (!Component) return null;
       return <Component key={`left-${block._bookshop_name}-${i}`} {...block} />;
     })}
   </div>
-  <div style="flex: 1;">
+  <div style="flex: 1; min-width: 0;">
     {right_blocks.map((block: any, i: number) => {
       const Component = components[block._bookshop_name];
       if (!Component) return null;

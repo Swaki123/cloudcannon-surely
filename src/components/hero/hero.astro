@@ -8,8 +8,8 @@ type Props = {
 const { title, subtitle, content } = Astro.props;
 ---
 
-<section style="padding: 4rem 2rem; text-align: center; background: #e0e7ff; border-radius: 1rem; margin: 2rem 0;">
-  <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">{title}</h2>
-  <p style="font-size: 1.25rem; margin-bottom: 2rem;">{subtitle}</p>
-  <p style="font-size: 1.25rem; margin-bottom: 2rem;">{content}</p>
+<section style="padding: 2rem 1rem; max-width: 100%; box-sizing: border-box;">
+  <h2 style="font-size: 2rem; margin-bottom: 1rem;">{title}</h2>
+  <p style="font-size: 1rem; margin-bottom: 1rem;">{subtitle}</p>
+  <p style="font-size: 1rem; margin-bottom: 1rem;">{content}</p>
 </section> 
