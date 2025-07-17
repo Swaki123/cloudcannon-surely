@@ -8,5 +8,6 @@ props:
       side:
         type: select
         options:
-          - left
-          - right 
+          values:
+            - left
+            - right 
