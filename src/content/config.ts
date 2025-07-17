@@ -4,7 +4,7 @@ const pages = defineCollection({
   schema: z.object({
     title: z.string(),
     subtitle: z.string(),
-    blocks: z.any(), // Add this line
+    content_blocks: z.array(z.record(z.any())),
   }),
 });
 

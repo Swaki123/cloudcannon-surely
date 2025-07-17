@@ -1,0 +1,26 @@
+---
+const { contentBlocks } = Astro.props;
+const components: Record<string, any> = {};
+const componentImports = import.meta.glob("../../components/**/*.astro", {
+  eager: true,
+});
+Object.entries(componentImports).forEach(([path, obj]) => {
+  const parts = path
+    .replace("../../components/", "")
+    .split(".")[0]
+    .split("/");
+  if (parts[parts.length - 1] === parts[parts.length - 2]) {
+    parts.pop();
+  }
+  const bookshopName = parts.join("");
+  components[bookshopName] = (obj as { default: any }).default;
+});
+---
+
+<main>
+  {contentBlocks.map((block: any, i: number) => {
+    const Component = components[block._bookshop_name];
+    if (!Component) return null;
+    return <Component key={`${block._bookshop_name}-${i}`} {...block} />;
+  })}
+</main> 

@@ -1,10 +1,10 @@
 ---
-import PageBuilder from '../components/pageBuilder/PageBuilder.astro';
+import Page from '../shared/astro/page.astro';
 import Layout from './layout.astro';
 
-const { title, subtitle, blocks } = Astro.props.frontmatter;
+const { title, subtitle, content_blocks } = Astro.props.frontmatter;
 ---
 
 <Layout title={title} subtitle={subtitle}>
-  <PageBuilder blocks={blocks} />
+  <Page bookshop:live contentBlocks={content_blocks} />
 </Layout>
