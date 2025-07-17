@@ -1,5 +1,8 @@
 spec:
   structures: [content_blocks]
+  label: Hero
+  description: A large hero section with title, subtitle, and content.
+  icon: view_carousel
 blueprint:
   title: Example Title
   subtitle: Example Subtitle

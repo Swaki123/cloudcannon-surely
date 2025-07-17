@@ -1,5 +1,8 @@
 spec:
   structures: [content_blocks]
+  label: Image Card
+  description: A card with an image, title, and description.
+  icon: image
 blueprint:
   imageUrl: /images/example.png
   title: Example Image Card
