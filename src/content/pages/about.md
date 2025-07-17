@@ -8,17 +8,10 @@ content_blocks:
         title: Example Title
         subtitle: Example Subtitle
         content: Example Content
-      - _bookshop_name: twoColumn
-        left_blocks:
-          - _bookshop_name: hero
-            title: Example Title
-            subtitle: Example Subtitle
-            content: Example Content
-        right_blocks:
-          - _bookshop_name: hero
-            title: Example Title
-            subtitle: Example Subtitle
-            content: Example Content
+      - _bookshop_name: hero
+        title: Example Title
+        subtitle: Example Subtitle
+        content: Example Content
     right_blocks:
       - _bookshop_name: imageCard
         imageUrl: /screenshot-from-2025-03-20-10-45-12.png
