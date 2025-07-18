@@ -4,6 +4,13 @@ paths:
   uploads: ../public/images
   static: ../public/images
 collections_config:
+  _inputs:
+    side:
+      type: select
+      options:
+        values:
+        - left
+        - right
   pages:
     path: content/pages
     glob:
