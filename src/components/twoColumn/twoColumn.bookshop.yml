@@ -5,10 +5,13 @@ spec:
   icon: view_column
 blueprint:
   blocks: [bookshop:structure:content_blocks]
+
 _inputs:
-  side:
-    type: select
-    options:
-      values:
-      - left
-      - right
+  blocks:
+    side:
+      type: select
+      label: Side
+      options:
+        values:
+          - left
+          - right
