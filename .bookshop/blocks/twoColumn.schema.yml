@@ -1,6 +1,12 @@
 label: Two Column
 name: twoColumn
 props:
+  side:
+    type: select
+    label: Side
+    options:
+      - left
+      - right
   blocks:
     type: blocks
     label: Blocks

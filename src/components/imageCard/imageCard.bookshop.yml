@@ -8,3 +8,4 @@ blueprint:
   imageUrl: /images/example.png
   title: Example Image Card
   description: Example description 
+  side: left 

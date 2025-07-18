@@ -5,6 +5,7 @@ spec:
   icon: view_column
 blueprint:
   blocks: [bookshop:structure:content_blocks]
+  side: left
 
 _inputs:
   blocks:

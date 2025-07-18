@@ -10,3 +10,9 @@ props:
   description:
     type: text
     label: Description 
+    side:
+      type: select
+      label: Side
+      options:
+        - left
+        - right

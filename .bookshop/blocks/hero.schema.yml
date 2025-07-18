@@ -9,4 +9,10 @@ props:
     label: Subtitle
   content:
     type: text
-    label: Content 
+    label: Content
+  side:
+    type: select
+    label: Side
+    options:
+      - left
+      - right 

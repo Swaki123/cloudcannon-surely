@@ -6,4 +6,5 @@ spec:
 blueprint:
   title: Example Title
   subtitle: Example Subtitle
-  content: Example Content 
+  content: Example Content
+  side: left 
